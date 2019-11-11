@@ -24,7 +24,7 @@ public static class TweenHelper
 
     public static IEnumerator SizeTo(Transform transform,Vector3 end ,float time , Action backCall = null)
     {
-        yield return SizeTo(transform, transform.position, end, time, backCall);
+        yield return SizeTo(transform, transform.localScale, end, time, backCall);
     }
 
     public static IEnumerator SizeTo(Transform transform, Vector3 start, Vector3 end, float time, Action backCall = null)
